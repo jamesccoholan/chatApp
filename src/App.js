@@ -67,6 +67,7 @@ function SignOut() {
 }
 
 function ChatRoom() {
+  
   const dummy = useRef();
 
   const messagesRef = firestore.collection("messages");
