@@ -7,6 +7,7 @@ import "firebase/auth";
 import "firebase/analytics";
 
 import { useAuthState } from "react-firebase-hooks/auth";
+
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 firebase.initializeApp({
@@ -47,7 +48,7 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>
-        Sign in with Google.
+        Sign in with Google
       </button>
       <p>
         Do not violate the community guidelines or you will be banned for life!
