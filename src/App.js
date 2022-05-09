@@ -21,7 +21,7 @@ firebase.initializeApp({
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
-const analytics = firebase.analytics();
+// const analytics = firebase.analytics();
 
 function App() {
   const [user] = useAuthState(auth);
@@ -67,7 +67,6 @@ function SignOut() {
 }
 
 function ChatRoom() {
-  
   const dummy = useRef();
 
   const messagesRef = firestore.collection("messages");
